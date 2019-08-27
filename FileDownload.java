@@ -14,8 +14,7 @@ public class FileDownload {
 		chromePrefs.put("download.default_directory", "D:\\downloads");
 		ChromeOptions options = new ChromeOptions();
 		options.setExperimentalOption("prefs", chromePrefs);
-		options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-
+		
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver(options);
 
